@@ -13,17 +13,20 @@ function MenuCard(name, price, explanation, image) {
     this.image = image;
 }
   
-const menuCard1 = new MenuCard("Detroit", "5$", "Detroit time", menuItem1Img); 
-const menuCard2 = new MenuCard("Pepperoni", "12$", "Pepperoni time", menuItem2Img); 
-const menuCard3 = new MenuCard("Neopolitan", "13$", "Neopolitan time", menuItem3Img); 
-const menuCard4 = new MenuCard("New York", "9$", "New York time", menuItem4Img); 
-const menuCard5 = new MenuCard("Chicago", "15$", "Chicago time", menuItem5Img); 
-const menuCard6 = new MenuCard("Margherita", "10$", "Margherita time", menuItem6Img); 
-export const menu = [menuCard1, menuCard2, menuCard3, menuCard4, menuCard5, menuCard6];
 
-export function showMenu(menu) {
+
+export function showMenu() {
     const content = document.querySelector("#content");
     content.innerText = "";
+
+    const menuCard1 = new MenuCard("Detroit", "5$", "Detroit time", menuItem1Img); 
+    const menuCard2 = new MenuCard("Pepperoni", "12$", "Pepperoni time", menuItem2Img); 
+    const menuCard3 = new MenuCard("Neopolitan", "13$", "Neopolitan time", menuItem3Img); 
+    const menuCard4 = new MenuCard("New York", "9$", "New York time", menuItem4Img); 
+    const menuCard5 = new MenuCard("Chicago", "15$", "Chicago time", menuItem5Img); 
+    const menuCard6 = new MenuCard("Margherita", "10$", "Margherita time", menuItem6Img); 
+    const menu = [menuCard1, menuCard2, menuCard3, menuCard4, menuCard5, menuCard6];
+
     menu.forEach((menuItem) => {
         const menuCard = document.createElement("div");
         menuCard.classList.add("menu-card");
