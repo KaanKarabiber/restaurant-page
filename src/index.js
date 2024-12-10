@@ -1,4 +1,4 @@
-import { showHome } from "./initial";
+import { showHome } from "./home";
 import "./styles.css";
 
 showHome();
