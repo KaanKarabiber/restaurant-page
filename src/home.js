@@ -3,10 +3,10 @@ export function showHome(){
     content.innerText = "";
     
     const headline = document.createElement("h2");
-    headline.textContent = "Pizza showtime";
+    headline.textContent = "Experience the perfect slice in a warm, welcoming atmosphere designed for pizza lovers.";
     
     const belowHeadlineText = document.createElement("p");
-    belowHeadlineText.textContent = "Enjoy the finest dining experience with us.";
+    belowHeadlineText.textContent = "Savor every bite of our handcrafted pizzas, made with love and the freshest ingredients.";
 
     const reservationBttn = document.createElement("button");
     reservationBttn.textContent = "Reservations";
