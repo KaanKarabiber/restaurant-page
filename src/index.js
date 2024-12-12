@@ -4,8 +4,7 @@ import { showMenu } from "./menu";
 import { showAbout } from "./about";
 
 //initial page
-showAbout();
-// showHome();
+showHome();
 
 const homeButton = document.querySelector("#home");
 const menuButton = document.querySelector("#menu");
